@@ -9,6 +9,8 @@
 #                 A.pop()
 #     return A
 
+# print(permutation(3))
+
 def permutation(n, A=[]):
     k = 0
     for a in A:
@@ -20,5 +22,4 @@ def permutation(n, A=[]):
                     break     
     return [k,A]   
 
-  
 print(permutation(4, [8,9,6,1]))
