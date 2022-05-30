@@ -12,13 +12,12 @@
 def permutation(n, A=[]):
     k = 0
     for a in A:
-        if 1<=a<=n:
+        if not 1<=a<=n:
             for j in range(n):
-                if j+1 not in A:
-                    print(A, A.index(a), j)
-                    A[A.index(a)] = j+1
+                if j + 1 not in A:  
+                    A[A.index(a)] = j + 1   
                     k += 1
-
+                    break     
     return [k,A]   
 
   
